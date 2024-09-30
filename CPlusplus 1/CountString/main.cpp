@@ -25,7 +25,7 @@ int countLowerCase(const std::string& input){
 int main() {
     // ask user for a string
     std::cout << "Enter a string: ";
-    std::getline(std::cin, userInput);
+    std::getline(std::cin >> std::ws, userInput);
 
     // call our function
     int result = countLowerCase(userInput);
