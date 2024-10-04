@@ -1,7 +1,7 @@
 // COSC 3306 C++
 // Name: Austin Robertson  
 // Date: 10/03/2024
-// one line description of the purpose of your program 
+// Takes in temperatures for 7 days and provides the average, high, and low
 
 #include <iostream>
 
