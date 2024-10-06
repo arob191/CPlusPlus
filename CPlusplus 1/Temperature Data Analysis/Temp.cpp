@@ -4,6 +4,7 @@
 // Takes in temperatures for 7 days and provides the average, high, and low
 
 #include <iostream>
+#include <iomanip>
 
 //Declare Global constants
 const int ARRAY_SIZE = 7;
@@ -63,7 +64,7 @@ int main()
     }
 
     // Call our average temp function
-    std::cout << "The average temperature is: " 
+    std::cout << "The average temperature is: " << std::fixed << std::setprecision(2)
         << calculateAverageTemperature(temperatures, ARRAY_SIZE) << "\n";
     // Call our highest temp function
     std::cout << "The highest temperature is: " 
