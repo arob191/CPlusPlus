@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+// If you are going to have the functino after the main code, then it needs to be declared first
 void testFunction();
 
 int main() {

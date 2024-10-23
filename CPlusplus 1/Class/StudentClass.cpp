@@ -1,5 +1,11 @@
+// COSC 3306 C++
+// Name: Austin Robertson
+// Date: 10/18/2024
+// Create a student class and manage a student object array
+
 #include <iostream>
 
+//Student Class
 class Student 
 {
     public:
@@ -36,14 +42,19 @@ class Student
 //Grade average function
 int gradeAverage(Student studentArray[], int size) 
 {
+    //Set our average variable
     double average = 0.00;
+
+    //Add up total grades
     for (int i = 0; i < 5; ++i) {
         average += studentArray[i].grade;
     }
     
+    //Calculate and return our average
     return average / 5;
 }
 
+//Main Code
 int main()
 {
     //Our object array
@@ -56,7 +67,7 @@ int main()
         int id;
         double grade;
 
-        std::cout << "Student " << i + 1 << " name: " << "\n";
+        std::cout << "Student " << i + 1 << " name: ";
         std::getline(std::cin >> std::ws, name); 
         std::cout << "ID: ";
         std::cin >> id;
@@ -73,6 +84,7 @@ int main()
         studentArray[i].displayDetails();
     }
 
+    //Call our average grade function
     std::cout << "Average grade: " << gradeAverage(studentArray, 5);
 
     return 0;
