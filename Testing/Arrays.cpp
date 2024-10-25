@@ -1,4 +1,7 @@
 #include <iostream>
+#include <string>
+#include <vector>
+#include <ctime>
 
 int main()
 {
@@ -16,16 +19,32 @@ int main()
 
     // return 0;
 
-    std::string classes[5];
+    srand(time(NULL));
 
-    for(int i = 0; i < sizeof(classes)/sizeof(std::string); i++)
-    {
-        std::cout << "Please provide a class: ";
-        std::getline(std::cin >> std::ws, classes[i]); //Used std::ws to ignore any spaces in the user answer
+    // std::vector<std::string> classes(5); // Initialize a vector with 5 elements
+    // for (int i = 0; i < classes.size(); i++) {
+    //     std::cout << "Please provide a class: ";
+    //     std::getline(std::cin >> std::ws, classes[i]); // Use std::ws to ignore any spaces in the user answer
+    // }
+    // for (int i = 0; i < classes.size(); i++) {
+    //     std::cout << classes[i] << "\n";
+    // }
+
+    std::vector<double> prices = {51.99, 16.75, 60, 99.99};
+
+    int amount;
+
+    std::cout << "how many values do you want to add to the prices array? " << std::endl;
+    std::cin >> amount;
+
+    for (int i = 0; i < amount; i++){
+        double num = (rand() / 100) + 1;
+        prices.push_back(num);
     }
 
-    for(int i = 0; i < sizeof(classes)/sizeof(std::string); i++)
-    {
-        std::cout << classes[i] << "\n";
+    for (int i = 0; i < prices.size(); i++){
+        
     }
+
+        return 0;
 }
