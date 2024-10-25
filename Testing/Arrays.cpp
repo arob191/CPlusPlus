@@ -42,8 +42,8 @@ int main()
         prices.push_back(num);
     }
 
-    for (int i = 0; i < prices.size(); i++){
-        
+    for (double prices : prices){
+        std::cout << prices << std::endl;
     }
 
         return 0;
