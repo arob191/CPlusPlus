@@ -1,7 +1,6 @@
-
 // COSC 3306 C++
 // Name: Austin Robertson  
-// Date: 11/08/2024
+// Date: 11/07/2024
 // Doubles our original array using the doubleCapacity method
 
 #include <iostream>
