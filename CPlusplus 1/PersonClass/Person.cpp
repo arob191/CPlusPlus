@@ -1,6 +1,6 @@
 // COSC 3306 C++
 // Name: Austin Robertson
-// Date: 11/16/2024
+// Date: 11/21/2024
 // Using Object oriented programming to create 3 classes: Person, Student, Employee
 
 #include <iostream>
@@ -9,7 +9,8 @@
 using namespace std;
 
 // Base Class Person
-class Person {
+class Person 
+{
 protected:
     string name;
     string address;
@@ -27,7 +28,8 @@ public:
 };
 
 // Derived Class Student
-class Student : public Person {
+class Student : public Person 
+{
     string status;
 
 public:
@@ -41,7 +43,8 @@ public:
 };
 
 // Derived Class Employee
-class Employee : public Person {
+class Employee : public Person 
+{
     string office;
     double salary;
 
@@ -56,7 +59,8 @@ public:
 };
 
 // Derived Class Faculty
-class Faculty : public Employee {
+class Faculty : public Employee 
+{
     string rank;
 
 public:
@@ -70,7 +74,8 @@ public:
 };
 
 // Derived Class Staff
-class Staff : public Employee {
+class Staff : public Employee 
+{
     string title;
 
 public:
@@ -83,9 +88,11 @@ public:
     }
 };
 
-int main() {
+// Main code
+int main() 
+{
 
-    // Create instances of each class
+    // Creating an instance of each class
     Student student1("Austin Robertson", "1010 Royal Center", "555-1234", "arobertson23@lamar.edu", "Junior");
     Student student2("Lilly Argaiz", "1010 Royal Center", "555-5678", "Lilly@gmail.com", "Senior");
     Faculty faculty1("Dr. Mohsen", "111 Test St", "555-8765", "mohsen@lamar.edu", "101", 75000, "Professor");
