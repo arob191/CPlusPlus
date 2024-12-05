@@ -43,7 +43,7 @@ int main()
     }
 
     for (double prices : prices){
-        std::cout << prices << std::endl;
+        std::cout << prices << " ";
     }
 
         return 0;

@@ -18,7 +18,7 @@ protected:
     string email;
 
 public:
-    Person(string name, string address, string phone, string email)
+    Person(string name, string address, string phone, string email) 
         : name(name), address(address), phone(phone), email(email) {}
 
     // Our virtual method. Meant to me overriden by our subclasses
