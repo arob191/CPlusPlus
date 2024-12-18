@@ -20,6 +20,9 @@ class Rational
         int intValue() const;
         double doubleValue() const;
 
+        bool operator< (const Rational& secondRational) const;
+        
+
     private:
         int numerator;
         int denominator;
