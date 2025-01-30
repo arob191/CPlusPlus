@@ -12,6 +12,5 @@ int main() {
 
     cout << PI << endl;
 
-
     return 0;
 }
