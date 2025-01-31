@@ -6,6 +6,7 @@ int main() {
     // Define variables
     string username;
 
+    // Grab users name
     cout << "Hello. What is your name?" << std::endl;
     getline(cin, username);
 
